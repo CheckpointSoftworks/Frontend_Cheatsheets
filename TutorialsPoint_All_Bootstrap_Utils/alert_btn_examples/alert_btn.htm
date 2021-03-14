@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        Tutorials point Bootstrap Examples
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://www.tutorialspoint.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="one-page-wonder.css" rel="stylesheet">
+    <script src="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.js"></script>
+    <link rel="stylesheet" href="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">
+              Toggle navigation
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                </button>
+                <h1 class="logo">
+            <a title="tutorialspoint">
+              <img alt="tutorialspoint" src="http://www.tutorialspoint.com/green/images/logo.png" style="height: auto; width: auto; display: inline-block; top: 0px;">
+            </a>
+          </h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="thick-heading">
+        ||Alert Example||
+      </h1>
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <!------------------------code---------------start---------------->
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="examples">
+                        <button class="btn btn-lg btn-primary sweet-10" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Primary']);">Primary</button>
+                        <button class="btn btn-lg btn-info sweet-11" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Info']);">Info</button>
+                        <button class="btn btn-lg btn-success sweet-12" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Success']);">Success</button>
+                        <button class="btn btn-lg btn-warning sweet-13" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Warning']);">Warning</button>
+                        <button class="btn btn-lg btn-danger sweet-14" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Danger']);">Danger</button>
+                    </div>
+                </div>
+            </div>
+
+            <!----Code------end----------------------------------->
+        </div>
+        <!-- /.container -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="index.html" class="logo">
+
+                            <img alt="Tutorials Point" class="img-responsive" src="http://www.tutorialspoint.com//scripts/img/logo-footer.png">
+
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <p>
+                            © Copyright 2015. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
+        </script>
+        <script>
+            document.querySelector('.sweet-10').onclick = function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "info",
+                    showCancelButton: true,
+                    confirmButtonClass: 'btn-primary',
+                    confirmButtonText: 'Primary!'
+                });
+            };
+
+            document.querySelector('.sweet-11').onclick = function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "info",
+                    showCancelButton: true,
+                    confirmButtonClass: 'btn-info',
+                    confirmButtonText: 'Info!'
+                });
+            };
+
+            document.querySelector('.sweet-12').onclick = function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "success",
+                    showCancelButton: true,
+                    confirmButtonClass: 'btn-success',
+                    confirmButtonText: 'Success!'
+                });
+            };
+
+            document.querySelector('.sweet-13').onclick = function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: 'btn-warning',
+                    confirmButtonText: 'Warning!'
+                });
+            };
+
+            document.querySelector('.sweet-14').onclick = function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "error",
+                    showCancelButton: true,
+                    confirmButtonClass: 'btn-danger',
+                    confirmButtonText: 'Danger!'
+                });
+            };
+        </script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
+        </script>
+    </div>
+</body>
+
+</html>

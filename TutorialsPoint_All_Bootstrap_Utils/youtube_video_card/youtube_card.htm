@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        Tutorials point Bootstrap Examples
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://www.tutorialspoint.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="one-page-wonder.css" rel="stylesheet">
+
+    <style>
+        .video-list-thumbs {}
+        
+        .video-list-thumbs > li {
+            margin-bottom: 12px;
+        }
+        
+        .video-list-thumbs > li:last-child {}
+        
+        .video-list-thumbs > li > a {
+            display: block;
+            position: relative;
+            background-color: #111;
+            color: #fff;
+            padding: 8px;
+            border-radius: 3px transition: all 500ms ease-in-out;
+            border-radius: 4px
+        }
+        
+        .video-list-thumbs > li > a:hover {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+            text-decoration: none
+        }
+        
+        .video-list-thumbs h2 {
+            bottom: 0;
+            font-size: 14px;
+            height: 33px;
+            margin: 8px 0 0;
+        }
+        
+        .video-list-thumbs .glyphicon-play-circle {
+            font-size: 60px;
+            opacity: 0.6;
+            position: absolute;
+            right: 39%;
+            top: 31%;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+            transition: all 500ms ease-in-out;
+        }
+        
+        .video-list-thumbs > li > a:hover .glyphicon-play-circle {
+            color: #fff;
+            opacity: 1;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+        }
+        
+        .video-list-thumbs .duration {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 2px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            left: 12px;
+            line-height: 13px;
+            padding: 2px 3px 1px;
+            position: absolute;
+            top: 12px;
+            transition: all 500ms ease;
+        }
+        
+        .video-list-thumbs > li > a:hover .duration {
+            background-color: #000;
+        }
+        
+        @media (min-width:320px) and (max-width: 480px) {
+            .video-list-thumbs .glyphicon-play-circle {
+                font-size: 35px;
+                right: 36%;
+                top: 27%;
+            }
+            .video-list-thumbs h2 {
+                bottom: 0;
+                font-size: 12px;
+                height: 22px;
+                margin: 8px 0 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">
+              Toggle navigation
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                </button>
+                <h1 class="logo">
+            <a title="tutorialspoint">
+              <img alt="tutorialspoint" src="http://www.tutorialspoint.com/green/images/logo.png" style="height: auto; width: auto; display: inline-block; top: 0px;">
+            </a>
+          </h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="thick-heading">
+        ||Video Example||
+      </h1>
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <!------------------------code---------------start---------------->
+
+            <div class="container">
+
+
+
+                <ul class="list-unstyled video-list-thumbs row">
+                    <li class="col-lg-3 col-sm-4 col-xs-6">
+                        <a href="#" title="Tutorials Point India Pvt ltd">
+                            <img src="http://www.tutorialspoint.com/scripts/img/logo-footer.png" alt="Barca" class="img-responsive" height="130px" />
+                            <h2>Tutorials Point India Pvt ltd</h2>
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                            <span class="duration">03:15</span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-sm-4 col-xs-6">
+                        <a href="#" title="Tutorials Point India Pvt ltd">
+                            <img src="http://www.tutorialspoint.com/scripts/img/logo-footer.png" alt="Barca" class="img-responsive" height="130px" />
+                            <h2>Tutorials Point India Pvt ltd</h2>
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                            <span class="duration">03:15</span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-sm-4 col-xs-6">
+                        <a href="#" title="Tutorials Point India Pvt ltd">
+                            <img src="http://www.tutorialspoint.com/scripts/img/logo-footer.png" alt="Barca" class="img-responsive" height="130px" />
+                            <h2>Tutorials Point India Pvt ltd</h2>
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                            <span class="duration">03:15</span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                        <a href="#" title="Tutorials Point India Pvt ltd">
+                            <img src="http://www.tutorialspoint.com/scripts/img/logo-footer.png" alt="Barca" class="img-responsive" height="130px" />
+                            <h2>Tutorials Point India Pvt ltd</h2>
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                            <span class="duration">03:15</span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                        <a href="#" title="Tutorials Point India Pvt ltd">
+                            <img src="http://www.tutorialspoint.com/scripts/img/logo-footer.png" alt="Barca" class="img-responsive" height="130px" />
+                            <h2>Tutorials Point India Pvt ltd</h2>
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                            <span class="duration">03:15</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!----Code------end----------------------------------->
+        </div>
+        <!-- /.container -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="index.html" class="logo">
+
+                            <img alt="Tutorials Point" class="img-responsive" src="http://www.tutorialspoint.com//scripts/img/logo-footer.png">
+
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <p>
+                            © Copyright 2015. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
+        </script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
+        </script>
+    </div>
+</body>
+
+</html>
